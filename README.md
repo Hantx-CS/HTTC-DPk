@@ -2,7 +2,6 @@
 
 ### Directory Structure
 - data/			&emsp;datasets.
-  - create_cpp &emsp; C++ File to create different scale of datasets.
 - Experiment1/		&emsp;Testing the performance on randomly partitioned data with varying privacy budgets.
 - Experiment2/		&emsp;Testing the performance under different dataset sizes.
 - Experiment3/	  &emsp;Testing the performance under different anonymity levels $k$.
