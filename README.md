@@ -12,9 +12,9 @@
 ### Prepare for IMDB
 Download the [IMDB dataset](https://www.cise.ufl.edu/research/sparse/matrices/Pajek/IMDB.html) and place the dataset in data/, and run the following commands:
 ```
-  cd data/
-  python3 ReadIMDB.py IMDB.mtx edges.csv deg.csv
-  cd ../
+  cd data/IMDB/
+  make run
+  cd ../../
 ```
 
 
