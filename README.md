@@ -9,7 +9,7 @@
 - LICENSE.txt		&emsp;MPL license.
 - README.md		&emsp;This file.
 
-For the code related to CentralLap$_{\triangle}$ and Local2Round$_{\triangle}$, please refer to the following GitHub repository: [https://github.com/LDPGraphStatistics/LDPGraphStatistics](https://github.com/LDPGraphStatistics/LDPGraphStatistics).
+For the code related to CentralLap△ and Local2Round△, please refer to the following GitHub repository: [https://github.com/LDPGraphStatistics/LDPGraphStatistics](https://github.com/LDPGraphStatistics/LDPGraphStatistics).
 
 ### Prepare for IMDB
 Download the [IMDB dataset](https://www.cise.ufl.edu/research/sparse/matrices/Pajek/IMDB.html) and place the dataset in data/, and run the following commands:
