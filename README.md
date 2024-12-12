@@ -17,13 +17,33 @@ Download the [IMDB dataset](https://www.cise.ufl.edu/research/sparse/matrices/Pa
   cd data/IMDB/
   make run
   cd ../../
+  cd data/
+  make dataClean
+  cd ../
 ```
 
 
 ### Run Experiments
-Copy the dataset files from the `data/` directory to each `experiment_*` folder. Modify the `sourceFile` in the Makefile to match the name of the dataset and set `EPSILON` to the desired value. For the Fraction and Scale experiments, this value can be set in the Makefile. For other experiments, modify `EPSILON` directly in `TriangleCount.py`. Adjust the `SLEEPTIME` appropriately to prevent CPU overload during the 300 cycle experiments, with each time conducting 10 cycle experiments, based on the performance capabilities of your device.
+In each method folder within the **Experiment** directory, you can run `make run`. For example, in the **Experiment1/HTTC-DPk** folder, simply execute the following code:
+```
+  cd Experiment1/HTTC-DPk
+  make run
+  cd ../../
+```
 
-For each `experiment_*` folder, the Python files can be executed using the commands `make run`, `make one`, or `make run_IMDB` specified in the Makefile. The default number of runs is set to 300, but this can be adjusted in the Makefile as needed.
+##### Prepare IMDB with different sizes for Experiment2
 
+Download the necessary library files as specified in the **/data/ExtractDatabase/include/README.md** file, and then execute the following code:
+```
+  cd /data/ExtractDatabase
+  make
+  cd ../../
+```
 
-Copy `convert.py` and `mean.py` into each `experiment_*` folder. Running `make mean` will calculate the average results from repeated experiments.
+Next, modify the commands under the **extract** section in the **/data/IMDB/makefile** as needed, and then execute the following code. (The current code is capable of extracting 10 sets of subgraphs, each with 10,000 nodes.)
+```
+  cd /data/IMDB/
+  make extract
+  cd ../../
+```
+
